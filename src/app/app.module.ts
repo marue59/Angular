@@ -6,13 +6,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FirstComponentComponent } from './first-component/first-component.component';
 import { UserComponent } from './components/user/user.component';
+import { CarteVisiteComponent } from './components/carte-visite/carte-visite.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     FirstComponentComponent,
-    UserComponent
+    UserComponent,
+    CarteVisiteComponent
   ],
   imports: [
     BrowserModule,
