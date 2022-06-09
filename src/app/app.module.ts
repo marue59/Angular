@@ -8,6 +8,7 @@ import { FirstComponentComponent } from './first-component/first-component.compo
 import { UserComponent } from './components/user/user.component';
 import { CarteVisiteComponent } from './components/carte-visite/carte-visite.component';
 import { AlerteButtonComponent } from './components/alerte-button/alerte-button.component';
+import { ListeComponent } from './components/liste/liste.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { AlerteButtonComponent } from './components/alerte-button/alerte-button.
     FirstComponentComponent,
     UserComponent,
     CarteVisiteComponent,
-    AlerteButtonComponent
+    AlerteButtonComponent,
+    ListeComponent
   ],
   imports: [
     BrowserModule,
