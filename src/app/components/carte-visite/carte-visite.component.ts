@@ -9,9 +9,9 @@ export class CarteVisiteComponent implements OnInit {
 
 user: any = {
     id: 1,
-    name: "Leanne Graham",
-    username: "Bret",
-    email: "Sincere@april.biz",
+    name: "Defretin",
+    username: "Marie",
+    email: "marie.defretin@marie.fr",
     address: {
       street : "Kulas Light",
       suite : "Apt. 556",
@@ -22,10 +22,10 @@ user: any = {
         lng : "81.1496"
       }
     },
-    phone : "1-770-736-8031 x56442",
-    website : "hildegard.org",
+    phone : "06.19.33.19.93",
+    website : "marieDefretin.fr",
     company : {
-      name : "Romaguera-Crona",
+      name : "IB - Cegos",
       catchPhrase : "Multi-layered client-server neural-net",
       bs : "harness real-time e-markets"
     }

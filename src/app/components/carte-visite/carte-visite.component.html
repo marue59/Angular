@@ -1,2 +1,15 @@
-<p>carte-visite works!</p>
-
+<div class="background">
+  <div class="card-hearder">
+    {{user.company.name}}
+    <div class="card">
+      <div class="name">
+        {{user.name}} {{user.username}}
+      </div>
+      <div class="info">
+        <p>Site : {{user.website}}</p>
+        <p>Email : {{user.email}}</p>
+        <p>Telephone : {{user.phone}}</p>
+      </div>
+    </div>
+  </div>
+</div>
