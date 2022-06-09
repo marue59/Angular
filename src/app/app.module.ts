@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { FirstComponentComponent } from './first-component/first-component.component';
 import { UserComponent } from './components/user/user.component';
 import { CarteVisiteComponent } from './components/carte-visite/carte-visite.component';
+import { AlerteButtonComponent } from './components/alerte-button/alerte-button.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { CarteVisiteComponent } from './components/carte-visite/carte-visite.com
     AppComponent,
     FirstComponentComponent,
     UserComponent,
-    CarteVisiteComponent
+    CarteVisiteComponent,
+    AlerteButtonComponent
   ],
   imports: [
     BrowserModule,
