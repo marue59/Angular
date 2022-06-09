@@ -1,7 +1,15 @@
 <p>Utilisateurs</p>
-<p>{{nom}}</p>
-<p>{{prenom}}</p>
+<p>Nom : {{nom}}</p>
+<p>Prenom : {{prenom}}</p>
+
+<p>Job : {{job}}</p>
+
 <!-- utilisant le propertyBinding -->
 <img [src]="imageUrl">
+
 <!-- utilisant le OneWayBinding / pas top-->
-<img src="{{imageUrl}}">
+<!--<img src="{{imageUrl}}"> -->
+
+
+<!-- utilisation de la banana in the box / TwoWayBinding-->
+<input type="text" name="jobLabel1" [(ngModel)]="job">
