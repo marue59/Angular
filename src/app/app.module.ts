@@ -7,7 +7,7 @@ import { FirstComponentComponent } from './first-component/first-component.compo
 
 @NgModule({
   declarations: [
-    AppCompone
+    AppComponent,
     FirstComponentComponent
   ],
   imports: [
