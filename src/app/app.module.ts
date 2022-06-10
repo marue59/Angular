@@ -13,6 +13,8 @@ import { MagieComponent } from './components/magie/magie.component';
 import { ListeFiltreeComponent } from './components/liste-filtree/liste-filtree.component';
 import { ButtonMenuComponent } from './components/button-menu/button-menu.component';
 import { GenericAlertButtonComponent } from './components/generic-alert-button/generic-alert-button.component';
+import { TimeComponent } from './components/time/time.component';
+import { TimeMenuComponent } from './components/time-menu/time-menu.component';
 
 
 @NgModule({
@@ -26,7 +28,9 @@ import { GenericAlertButtonComponent } from './components/generic-alert-button/g
     MagieComponent,
     ListeFiltreeComponent,
     ButtonMenuComponent,
-    GenericAlertButtonComponent
+    GenericAlertButtonComponent,
+    TimeComponent,
+    TimeMenuComponent
   ],
   imports: [
     BrowserModule,
