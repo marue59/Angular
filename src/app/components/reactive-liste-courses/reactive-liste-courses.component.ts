@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 // importer les modules de formulaire //
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-reactive-liste-courses',
@@ -19,8 +19,8 @@ export class ReactiveListeCoursesComponent implements OnInit {
     // differente instance de formControl
     // regrouper plusieurs instance dans un objet
     // on peut lui donner une valeur par defaut mais nous vide
-      designation: new FormControl(''),
-      prix: new FormControl('')
+      designation: new FormControl('', Validators.required),
+      prix: new FormControl('', Validators.required)
   })
   }
 

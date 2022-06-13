@@ -1,6 +1,6 @@
 <h3> Liste des courses</h3>
 <ul>
-  <li *ngFor="let article of articles">{{article.designation}} : {{article.prix}}</li>
+  <li *ngFor="let article of articles">{{article.designation}} : {{article.prix}} €</li>
 </ul>
 
 <p>Total : {{totalPrice}}€</p>
@@ -10,12 +10,13 @@
 <!--utilisation du propertyBinding-->
 <form [formGroup]="article" (ngSubmit)="addArticle()">
   <label for="designation">
-    Désignation:
+    Désignation :
     <input type="text" formControlName="designation">
   </label>
   <label for="prix">
     Prix :
-    <input type="number" formControlName="prix">
+    <input type="number" formControlName="prix">€
   </label>
-  <button type="submit">Ajouter</button>
+   <!--je vuex lier la proprieté disable grace au porpertyBinding-->
+  <button type="submit" [disabled]="article.invalid">Ajouter</button>
 </form>
