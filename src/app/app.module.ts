@@ -17,6 +17,7 @@ import { TimeComponent } from './components/time/time.component';
 import { TimeMenuComponent } from './components/time-menu/time-menu.component';
 import { ListeCoursesComponent } from './components/liste-courses/liste-courses.component';
 import { ReactiveListeCoursesComponent } from './components/reactive-liste-courses/reactive-liste-courses.component';
+import { FormbuilderListeCoursesComponent } from './components/formbuilder-liste-courses/formbuilder-liste-courses.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { ReactiveListeCoursesComponent } from './components/reactive-liste-cours
     TimeComponent,
     TimeMenuComponent,
     ListeCoursesComponent,
-    ReactiveListeCoursesComponent
+    ReactiveListeCoursesComponent,
+    FormbuilderListeCoursesComponent
   ],
   imports: [
     BrowserModule,

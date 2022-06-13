@@ -1,0 +1,22 @@
+<h3>Listes des courses</h3>
+<ul>
+  <li *ngFor="let article of articles"> {{article.designation}} : {{ article.prix}}€
+  </li>
+</ul>
+<h4>Total : {{totalPrice}}€</h4>
+
+<h3>Ajouter un article</h3>
+
+<form [formGroup]="article" (ngSubmit)="onSubmit()">
+  <label for="designation">Désignation :
+    <input type="text" formControlName="designation">
+    <!--si le user a deja envoyé le  form et qu'il n'est pas valide :-->
+    <span *ngIf="submitted === true && form['designation'].invalid">* Nom invalide </span>
+  </label>
+  <label for="prix">Prix :
+    <input type="number" formControlName="prix">
+    <!--si le user a deja envoyé le  form et qu'il n'est pas valide :-->
+    <span *ngIf="submitted === true && form['prix'].invalid">* Prix invalide </span>
+  </label>
+   <button type="submit">Ajouter</button>
+</form>
