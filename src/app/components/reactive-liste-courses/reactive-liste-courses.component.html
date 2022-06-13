@@ -1,0 +1,21 @@
+<h3> Liste des courses</h3>
+<ul>
+  <li *ngFor="let article of articles">{{article.designation}} : {{article.prix}}</li>
+</ul>
+
+<p>Total : {{totalPrice}}€</p>
+
+<h3>Ajouter un article</h3>
+
+<!--utilisation du propertyBinding-->
+<form [formGroup]="article" (ngSubmit)="addArticle()">
+  <label for="designation">
+    Désignation:
+    <input type="text" formControlName="designation">
+  </label>
+  <label for="prix">
+    Prix :
+    <input type="number" formControlName="prix">
+  </label>
+  <button type="submit">Ajouter</button>
+</form>

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
@@ -16,6 +16,7 @@ import { GenericAlertButtonComponent } from './components/generic-alert-button/g
 import { TimeComponent } from './components/time/time.component';
 import { TimeMenuComponent } from './components/time-menu/time-menu.component';
 import { ListeCoursesComponent } from './components/liste-courses/liste-courses.component';
+import { ReactiveListeCoursesComponent } from './components/reactive-liste-courses/reactive-liste-courses.component';
 
 
 @NgModule({
@@ -32,12 +33,14 @@ import { ListeCoursesComponent } from './components/liste-courses/liste-courses.
     GenericAlertButtonComponent,
     TimeComponent,
     TimeMenuComponent,
-    ListeCoursesComponent
+    ListeCoursesComponent,
+    ReactiveListeCoursesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
