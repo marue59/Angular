@@ -15,6 +15,7 @@ import { ButtonMenuComponent } from './components/button-menu/button-menu.compon
 import { GenericAlertButtonComponent } from './components/generic-alert-button/generic-alert-button.component';
 import { TimeComponent } from './components/time/time.component';
 import { TimeMenuComponent } from './components/time-menu/time-menu.component';
+import { ListeCoursesComponent } from './components/liste-courses/liste-courses.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { TimeMenuComponent } from './components/time-menu/time-menu.component';
     ButtonMenuComponent,
     GenericAlertButtonComponent,
     TimeComponent,
-    TimeMenuComponent
+    TimeMenuComponent,
+    ListeCoursesComponent
   ],
   imports: [
     BrowserModule,

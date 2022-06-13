@@ -1,0 +1,13 @@
+<!---Afficher la liste des courses ----->
+<ul *ngFor="let article of articles">
+  <li>{{article}}</li>
+</ul>
+
+<!---Formulaire pour afficher des articles ----->
+<!--- ngSubmit ecoute l'evenement : pour qu'angular sache que c'est son submit ----->
+<form (ngSubmit)="addArticle()">
+  <!--On utilise le twoBindin pour lier l'input a notre attricbut 'newarticle' de notre controller-->
+  <input type="text" name="newArticle" [(ngModel)]="newArticle">
+  <!--Ajout d'un button submit pour soumettre le formulaire-->
+  <button type="submit">Ajouter</button>
+</form>
